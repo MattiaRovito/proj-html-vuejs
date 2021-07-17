@@ -2,10 +2,15 @@
     
     
     <div class="col-6">
+
+        <!-- v-bind:style="{ backgroundImage: 'url(' + img + ')' }" -->
             
-    
             <div class="box">
-                <img :src="img" :alt="img" class="immagini">
+
+                <!-- Nell'ispezione li prende ma non li carica -->
+                <img :src=img :alt="img" class="immagini">
+                
+               
                 <h2>{{txt}}</h2>
                 <p class="fst-italic">{{id}}</p>
             </div>
@@ -29,7 +34,7 @@ export default {
     },
     data(){
         return {
-            
+        
         }
     }
     

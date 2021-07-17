@@ -6,11 +6,9 @@
             :id='pic.id'
             />
 
-
         <Process/>
 
         <Message/>
-
 
         <Posters/>
     </div>

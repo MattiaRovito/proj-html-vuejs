@@ -1,14 +1,16 @@
 <template>
-
-    <div>
-
-        <!-- <img :src="img" :alt="img" class="immagini"> -->
     
-        <div class="box">
-            <h2>{{txt}}</h2>
-            <p class="fst-italic">{{id}}</p>
-                
-        </div>
+    
+    <div class="col-6">
+            
+    
+            <div class="box">
+                <img :src="img" :alt="img" class="immagini">
+                <h2>{{txt}}</h2>
+                <p class="fst-italic">{{id}}</p>
+            </div>
+  
+        
     </div>
     
 
@@ -24,6 +26,11 @@ export default {
         img: Image,
         txt: String,
         id: String
+    },
+    data(){
+        return {
+            
+        }
     }
     
 }
@@ -39,6 +46,6 @@ export default {
 .box
 {
     border: 1px solid black;
-    width: 20%;
+    width: 100%;
 }
 </style>

@@ -1,10 +1,15 @@
 <template>
     <div>
-        <Illustration class="row" v-for="(pic, i) in pics" :key='i'
+        <div class="row">
+
+       
+        <Illustration class="col-4" v-for="(pic, i) in pics" :key='i'
             :img='pic.image'
             :txt='pic.text'
             :id='pic.id'
             />
+
+        </div>
 
         <Process/>
 
@@ -33,33 +38,33 @@ export default {
         return {
             pics : [
                 {
-                    image : '../assets/img/h-2-port-img-1.jpg',
+                    image : 'h-2-port-img-1',
                     text: 'All these illustrations',
                     id: 'Illustration'
 
                 },
                 {
-                    image : '../assets/img/h-2-port-img-2.jpg',
+                    image : 'h-2-port-img-2',
                     text: 'Type and Illustrations',
                     id: 'Illustration'
                 },
                 {
-                    image : '../assets/img/h-2-port-img-3.jpg',
+                    image : 'h-2-port-img-3',
                     text: 'Draw and illustrate',
                     id: 'Illustration'
                 },
                 {
-                    image : '../assets/img/h-2-port-img-4.jpg',
+                    image : 'h-2-port-img-4',
                     text: 'Illustrations of novels',
                     id: 'Illustration'
                 },
                 {
-                    image : '../assets/img/h-2-port-img-5.jpg',
+                    image : 'h-2-port-img-5',
                     text: 'Too many illustrations',
                     id: 'Illustration'
                 },
                 {
-                    image : '../assets/img/h-2-port-img-6.jpg',
+                    image : 'h-2-port-img-6',
                     text: 'Dreams are illustrations',
                     id: 'Illustration'
                 }

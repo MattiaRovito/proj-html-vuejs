@@ -1,21 +1,27 @@
 <template>
     
     
-    <div class="col-6">
-
-        <!-- v-bind:style="{ backgroundImage: 'url(' + img + ')' }" -->
-            
-            <div class="box">
-
-                <!-- Nell'ispezione li prende ma non li carica -->
-                <img :src=img :alt="img" class="immagini">
+    <div>
                 
-               
-                <h2>{{txt}}</h2>
-                <p class="fst-italic">{{id}}</p>
-            </div>
-  
+        <!-- Il require permette di importare le immagini da una components all'altra. Indispensabile. -->
+
+        <!-- Chiedere perché si è formata la barra orizzontale + eliminare margine tra le pics -->
         
+
+        <div class="position-relative">
+            <img :src="require('@/assets/img/' + img + '.jpg')" :alt="img" class="w-100 image">
+
+                
+            <div class="box">  
+                <a href="#" class="text"><p>{{txt}}</p></a>
+                <a href="#"><p class="fst-italic">{{id}}</p></a>
+            </div>
+
+        </div>
+       
+        
+  
+
     </div>
     
 
@@ -43,14 +49,21 @@ export default {
 
 <style lang='scss' scoped>
 
-.immagini
-{
-    width: 50%;
-}
+
 
 .box
 {
-    border: 1px solid black;
-    width: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 300px;
+    background-color: white;
+    width: 55%;
+    padding: 20px;
+
+    .text
+    {
+        font-size: 28px;
+    }
 }
 </style>

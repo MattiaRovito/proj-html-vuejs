@@ -1,7 +1,18 @@
 <template>
 <div>
 <!--! VEDERE SEGNALIBRO SU FIREFOX PER LO SLIDER VUE-CLI -->
+<!-- Usare carousel (vedere bootstrap+npm) -->
+
+    
+    
+    
     <div class="d-flex">
+
+        <!-- pulsante prev -->
+        <div class="prev">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <!-- /pulsante prev -->
         
         
         <div>
@@ -15,6 +26,13 @@
         </div>
 
         <img :src="require('@/assets/img/' + imgJ + '.png')" :alt="imgJ" class="w-75">
+        <!-- LE FOGLIE LE INSERISCO DIRETTAMENTE QUI PER POSIZIONARLE CON I POSITION ABSOLUTE -->
+
+        <!-- pulsante next -->
+        <div class="next">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <!-- /pulsante next -->
     </div>
 </div>
 </template>
@@ -67,5 +85,29 @@ img
     padding: 40px;
 }
 
+.prev, .next
+{
+    font-size: 20px;
+    color: white;
+    background-color: #e1c0b0;
+    border-radius: 50%;
+    padding: 0 10px 10px 10px;
+    height: 30px;
+    margin: 20px;
+}
+
+.prev
+{
+    position:absolute;
+    left: 0;
+    top: 400px;
+}
+
+.next
+{
+    position:absolute;
+    right: 0;
+    top: 400px;
+}
 
 </style>

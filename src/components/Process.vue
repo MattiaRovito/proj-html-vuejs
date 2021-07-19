@@ -1,27 +1,23 @@
 <template>
-  <div class="text-center">
-      <div class="txt">Working <strong class="fst-italic">process</strong>
+  <div class="text-center position-relative">
+      <div class="txt">Working <strong class="fst-italic">process</strong></div>
+
+      <div class="row justify-content-center m-0 p-0" >
+
+        <Working 
+        class="col-2 m-0 p-0"
+        v-for="(idea, i) in ideas" 
+        :key='i'
+        :imgI='idea.imgIdeas'
+        :txtI='idea.textIdeas'
+        :idI='idea.idIdeas'
+        />
       </div>
-
-      
-        <div class="row justify-content-center">
-
-          <Working 
-          class="col-2 m-0 p-0"
-          v-for="(idea, i) in ideas" 
-          :key='i'
-          :imgI='idea.imgIdeas'
-          :txtI='idea.textIdeas'
-          :idI='idea.idIdeas'
-          />
-
-
-        </div>
 
 
       <!-- CORREGGERE POSITION ABSOLUTE -->
-      <div >
-          <img src="@/assets/svg/svg-3.svg" alt="wave" class="position-absolute">
+      <div class="position-absolute top-50">
+          <img src="@/assets/svg/svg-3.svg" alt="wave">
       </div>
         
     
@@ -78,8 +74,7 @@ export default {
 .position-absolute
 {
   z-index: -3;
-  left: 200;
-  top: 200;
+  left: 400px;
 }
 
 

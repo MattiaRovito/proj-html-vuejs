@@ -1,8 +1,11 @@
 <template>
   <div class="mt-3 ideas">
       <i :class="imgI" class="font-i"></i>
-      <div>{{txtI}}</div>
-      <div>{{idI}}</div>
+      <div class="p-3">
+        <div class="h5">{{txtI}}</div>
+        <span>{{idI}}</span>
+      </div>
+      
   </div>
 </template>
 
@@ -23,9 +26,19 @@ export default {
 .font-i
 {
   font-size: 50px;
-  padding: 60px;
+  padding:55px 60px;
   border-radius: 50%;
   background-color: #faf7f1;
+}
+
+.h5
+{
+    margin-top: 55px;
+}
+span
+{
+    line-height: 1.8;
+    color:#828282;
 }
 
 .font-i:first-child

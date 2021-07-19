@@ -63,6 +63,7 @@ export default {
 
 img
 {
+  transition: transform 0.20s;
   &:hover
   {
     transform: scale(1.009);

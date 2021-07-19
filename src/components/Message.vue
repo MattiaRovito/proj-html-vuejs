@@ -22,6 +22,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     height: 529px;
+    margin-top: 180px;
 }
 
 .container

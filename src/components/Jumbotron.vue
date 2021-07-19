@@ -16,7 +16,7 @@
         
         
         <div>
-            <div class="first-text">{{txtJ}} <strong class="fst-italic">{{txtSJ}}</strong></div>
+            <div class="first-text">{{txtJ}} <strong class="fst-italic fw-bold">{{txtSJ}}</strong></div>
             <p>{{captionJ}}</p>
             <div class="btn-padding">
                 <button class="btn text-uppercase rounded-0"><span>{{btnJ}}</span></button>
@@ -62,7 +62,10 @@ export default {
     font-size: 90px;
     padding: 150px 50px 0 300px;
     line-height: 1;
+    font-weight: 100;
 }
+
+
 p
 {
     color: #898988;

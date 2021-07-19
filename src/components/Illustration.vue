@@ -14,7 +14,7 @@
                  
             <div class="box">  
                 <a href="#" class="text"><p>{{txt}}</p></a>
-                <a href="#"><p class="fst-italic">{{id}}</p></a>
+                <a href="#"><p class="fst-italic text-decoration-underline">{{id}}</p></a>
             </div>
 
         </div>
@@ -49,6 +49,12 @@ export default {
 
 <style lang='scss' scoped>
 
+.position-relative:hover > .box
+{
+    width: 55%;
+    opacity: 1;
+}
+
 
 
 .box
@@ -58,8 +64,10 @@ export default {
     left: 0;
     top: 300px;
     background-color: white;
-    width: 55%;
+    width: 0%;
+    opacity: 0;
     padding: 20px;
+    transition: width .35s ease-in-out;
 
     .text
     {

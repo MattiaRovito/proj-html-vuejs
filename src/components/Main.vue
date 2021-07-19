@@ -1,12 +1,13 @@
 <template>
     <div>
-        <div class="row">
+        <div class="row m-0 p-0">
 
        
-        <Illustration class="col-4" v-for="(pic, i) in pics" :key='i'
+        <Illustration class="col-4 p-0 m-0" v-for="(pic, i) in pics" :key='i'
             :img='pic.image'
             :txt='pic.text'
             :id='pic.id'
+            
             />
 
         </div>

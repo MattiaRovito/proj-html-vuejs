@@ -1,5 +1,5 @@
 <template>
-    <header >
+    <header>
 
         <div class="d-flex justify-content-between p-3">
             <!-- logo -->
@@ -27,8 +27,18 @@
             <!-- /nav -->
 
         </div>
-
-        <Jumbotron/>
+        <div>
+            <Jumbotron 
+            v-for="(jb, i) in jumbos" 
+            :key="i" 
+            :imgJ='jb.imgJumbo'
+            :txtJ='jb.textJumbo'
+            :txtSJ='jb.textStrongJumbo'
+            :captionJ='jb.captionJumbo'
+            :btnJ='jb.buttonJumbo'
+            />
+        </div>
+        
 
     </header>
    
@@ -43,7 +53,24 @@ export default {
     },
     data (){
         return {
-            menu : ['Home', 'Pages', 'Portfolio', 'Blog', 'Shop', 'Elements']
+            menu : ['Home', 'Pages', 'Portfolio', 'Blog', 'Shop', 'Elements'],
+            // Se si crea un array di oggetti si possono passare tramite active le barre colorate   
+            jumbos : [
+                {
+                    imgJumbo: 'h-2-slider-img-11',
+                    textJumbo: 'Our new folio full of',
+                    textStrongJumbo: 'joy', 
+                    captionJumbo: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.',
+                    buttonJumbo: 'Read more'
+                },
+                // {
+                //     imgJumbo: 'h-2-slider-img-11',
+                //     textJumbo: 'Our new folio full of',
+                //     textStrongJumbo: 'joy', 
+                //     captionJumbo: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.',
+                //     buttonJumbo: 'Read more'
+                // }
+            ]
         }
        
     }
@@ -52,17 +79,8 @@ export default {
 
 <style lang="scss" scoped>
 
-//! ALZARE LA BARRA VICINO AL MENU + CAMBIARE I COLORI PER OGNI SINGOLA SEZIONE
 
-// ul li:first-child
-// {
-//     content: "";
-//     border-bottom: 3px solid rgb(34, 156, 34);
-//     width: 100%;
-//     // height: 3px;
-//     // background-color: rgb(34, 156, 34);
-//     display: block; 
-// }
+
 
 
 li

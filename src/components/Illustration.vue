@@ -11,7 +11,7 @@
         <div class="position-relative">
             <img :src="require('@/assets/img/' + img + '.jpg')" :alt="img" class="w-100 image">
 
-                
+                 
             <div class="box">  
                 <a href="#" class="text"><p>{{txt}}</p></a>
                 <a href="#"><p class="fst-italic">{{id}}</p></a>

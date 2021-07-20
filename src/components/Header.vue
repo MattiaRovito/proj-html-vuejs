@@ -36,6 +36,10 @@
             :txtSJ='jb.textStrongJumbo'
             :captionJ='jb.captionJumbo'
             :btnJ='jb.buttonJumbo'
+            :leafOne='jb.leafOne'
+            :leafTwo='jb.leafTwo'
+            :leafThree='jb.leafThree'
+            :leafFour='jb.leafFour'
             />
         </div>
         
@@ -61,15 +65,13 @@ export default {
                     textJumbo: 'Our new folio full of',
                     textStrongJumbo: 'joy', 
                     captionJumbo: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.',
-                    buttonJumbo: 'Read more'
+                    buttonJumbo: 'Read more',
+                    leafOne: 'h-2-slider-img-12',
+                    leafTwo: 'h-2-slider-img-13',
+                    leafThree: 'h-2-slider-img-14',
+                    leafFour: 'short-slider-rev-1-img-2'
                 },
-                // {
-                //     imgJumbo: 'h-2-slider-img-11',
-                //     textJumbo: 'Our new folio full of',
-                //     textStrongJumbo: 'joy', 
-                //     captionJumbo: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.',
-                //     buttonJumbo: 'Read more'
-                // }
+               
             ]
         }
        

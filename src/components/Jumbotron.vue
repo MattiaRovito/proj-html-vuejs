@@ -25,7 +25,12 @@
         </div>
 
         <img :src="require('@/assets/img/' + imgJ + '.png')" :alt="imgJ" class="w-75 jumbo">
-        <!-- LE FOGLIE LE INSERISCO DIRETTAMENTE QUI PER POSIZIONARLE CON I POSITION ABSOLUTE -->
+
+        <img :src="require('@/assets/img/' + leafOne + '.png')" :alt="leafOne" class="position-absolute leaf_one"> 
+        <img :src="require('@/assets/img/' + leafTwo + '.png')" :alt="leafTwo" class="position-absolute leaf_two">   
+        <img :src="require('@/assets/img/' + leafThree + '.png')" :alt="leafThree" class="position-absolute leaf_three">
+        <img :src="require('@/assets/img/' + leafFour + '.png')" :alt="leafFour" class="position-absolute leaf_four">
+        <img :src="require('@/assets/img/' + leafFour + '.png')" :alt="leafFour" class="position-absolute leaf_fourth">
 
         <!-- pulsante next -->
         <div class="next">
@@ -55,7 +60,11 @@ export default {
         txtJ: String,
         txtSJ: String,
         captionJ: String,
-        btnJ: String
+        btnJ: String,
+        leafOne: Image,
+        leafTwo: Image,
+        leafThree: Image,
+        leafFour: Image
     },
   
 
@@ -129,6 +138,33 @@ img
     padding: 20px;
 }
 
+.leaf_one{
+    bottom: 236px;
+    right: 800px;
+}
+
+.leaf_two{
+    bottom: 160px;
+    right: 720px;
+}
+
+.leaf_three{
+    bottom: 180px;
+    right: 85px;
+}
+
+.leaf_four{
+    top: 212px;
+    right: 800px;
+}
+
+.leaf_fourth{
+    transform: rotate(90deg);
+    top: 100px;
+    right: 85px;
+}
+
+
 .point
 {
     content:"";
@@ -147,6 +183,7 @@ img
 button:hover
 {
     background-color: #e1c0b0;
+    color: white;
 }
 
 

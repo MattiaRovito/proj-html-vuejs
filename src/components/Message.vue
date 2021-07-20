@@ -48,6 +48,12 @@ export default {
         {
             margin: 0 20px;
         }
+
+        &:hover
+        {
+            background-color: #e1c0b0;
+            color: white;
+        }
     }
 
 }

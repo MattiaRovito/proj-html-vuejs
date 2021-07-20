@@ -1,7 +1,7 @@
 <template>
   <footer>
       <div class="container">
-          CIAO
+          
       </div>
   </footer>
 </template>

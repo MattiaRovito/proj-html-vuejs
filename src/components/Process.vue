@@ -15,7 +15,7 @@
       </div>
 
 
-      <!-- CORREGGERE POSITION ABSOLUTE -->
+      
       <div class="position-absolute top-50">
           <img src="@/assets/svg/svg-3.svg" alt="wave">
       </div>

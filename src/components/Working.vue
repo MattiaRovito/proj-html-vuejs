@@ -29,6 +29,7 @@ export default {
   padding:55px 60px;
   border-radius: 50%;
   background-color: #faf7f1;
+
 }
 
 .h5

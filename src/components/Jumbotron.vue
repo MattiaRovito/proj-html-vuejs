@@ -18,14 +18,13 @@
         <div>
             <div class="first-text">{{txtJ}} <strong class="fst-italic fw-bold">{{txtSJ}}</strong></div>
             <p>{{captionJ}}</p>
-            <div class="btn-padding">
-                <button class="btn text-uppercase rounded-0"><span>{{btnJ}}</span></button>
-            </div>
+            <button class="btn text-uppercase rounded-0"><span class="filling">{{btnJ}}</span></button>
+            
            
 
         </div>
 
-        <img :src="require('@/assets/img/' + imgJ + '.png')" :alt="imgJ" class="w-75">
+        <img :src="require('@/assets/img/' + imgJ + '.png')" :alt="imgJ" class="w-75 jumbo">
         <!-- LE FOGLIE LE INSERISCO DIRETTAMENTE QUI PER POSIZIONARLE CON I POSITION ABSOLUTE -->
 
         <!-- pulsante next -->
@@ -33,7 +32,18 @@
             <i class="fas fa-chevron-right"></i>
         </div>
         <!-- /pulsante next -->
+
+        
+
+
+
     </div>
+        <!-- three points -->
+        <div class="d-flex justify-content-center">
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
 </div>
 </template>
 
@@ -72,7 +82,8 @@ p
     font-size: 20px;
     padding: 20px 30px 0 300px;
 }
-.btn-padding
+
+.btn
 {
     margin-left: 300px;
     margin-right: 415px;
@@ -113,4 +124,33 @@ img
     top: 400px;
 }
 
+.jumbo
+{
+    padding: 20px;
+}
+
+.point
+{
+    content:"";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e1c0b0;
+    margin: 20px 10px;
+
+    &:hover
+    {
+        transform: scale(1.2);
+    }
+}
+
+button:hover
+{
+    background-color: #e1c0b0;
+}
+
+
 </style>
+
+
+

@@ -1,16 +1,25 @@
 <template>
   <div id="app">
     
-      <div class="qode d-flex">
-        <img src="@/assets/svg/svg-4.svg" alt="svg">
-        <span class="text-uppercase related">Related</span>
+      <div class="qode position-fixed p-3">
+        
+         
+            <img src="@/assets/svg/svg-4.svg" alt="svg" class="w-img me-2">
+          
+            <span class="text-uppercase related">Related</span>
+            
+          
       </div>
     
 
-    <!-- <div class="shop d-flex">
-      <img src="@/assets/svg/svg-9.svg" alt="svg">
-      <span class="text-uppercase related">Buy Now</span>
-    </div> -->
+    <div class="shop d-flex position-fixed">
+
+          <img src="@/assets/svg/svg-6.svg" alt="svg">
+      
+          <span class="text-uppercase buy">Buy Now</span>
+
+      
+    </div>
     
 
     <Header/>
@@ -33,6 +42,15 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data(){
+    return {
+      informations: [
+        {
+          
+        }
+      ]
+    }
   }
 }
 </script>
@@ -41,26 +59,48 @@ export default {
 @import '@/style/commons.scss';
 
 
-
-
 .qode
 {
-  width: 2%;
-  position:fixed;
-  right: 80px;
   top: 170px;
-  background-color: red;
-  z-index: 1000;
+  background-color: #ef2853;
 }
+
+.shop
+{
+  top: 250px;
+  background-color: white;
+  padding: 15px 13px;
+  margin-left: 5px;
+}
+
+
+.qode, .shop
+{
+  right: -80px;
+  z-index: 1000;
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+}
+
+
+.w-img
+{
+  width: 13%;
+}
+
 
 .related
 {
-  line-height: 3;
-  margin-left: 8px;
-  font-size: 14px;
-  
+  font-size: 12px;
+  color: white;
 }
 
+.buy
+{
+  font-size: 12px;
+  padding: 5px;
+}
 
 
 

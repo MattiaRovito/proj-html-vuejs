@@ -12,7 +12,7 @@
             <img :src="require('@/assets/img/' + img + '.jpg')" :alt="img" class="w-100 image">
 
                  
-            <div class="box " >  
+            <div class="box" >  
                 <a href="#" class="text"><p>{{txt}}</p></a>
                 <a href="#"><p class="fst-italic text-decoration-underline">{{id}}</p></a>
             </div>
@@ -74,4 +74,9 @@ export default {
         font-size: 28px;
     }
 }
+
+
 </style>
+
+
+

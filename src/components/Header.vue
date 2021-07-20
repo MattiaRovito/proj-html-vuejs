@@ -14,7 +14,7 @@
             <!-- utilizzato un v-for per ciclare un array all'interno di una nav -->
             <nav class="d-flex">
                 <ul class="d-flex text-uppercase fw-bold">
-                    <li v-for="(element, i) in menu" :key="i" class="m-3 underline"><a href="#">{{element}}</a>
+                    <li v-for="(element, i) in menu" :key="i" class="m-3"><a href="#">{{element}}</a>
                 
                     </li>
                 </ul>
@@ -88,15 +88,19 @@ export default {
 li
 {
     font-size: 14px;
+    position:relative;
 
     a::after
     {
     content: "";
     width: 0;
-    height: 3px;
-    background-color: rgb(34, 156, 34);
+    height: 4px;
+    background-color: rgba(34, 156, 34, 0.3);
     display: block;
     transition: width 0.5s;
+    position:absolute;
+    bottom: 6px;
+    left: 0;
     }
 
     a:hover::after 

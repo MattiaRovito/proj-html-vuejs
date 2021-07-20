@@ -15,4 +15,8 @@ props: {
 
 <style lang='scss' scoped>
 
+a:hover
+{
+    color:white;
+}
 </style>

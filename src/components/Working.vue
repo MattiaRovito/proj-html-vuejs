@@ -15,7 +15,8 @@ export default {
     props: {
         imgI: String,
         txtI: String,
-        idI: String
+        idI: String,
+        colorI: String
     }
 }
 </script>
@@ -42,28 +43,10 @@ span
     color:#828282;
 }
 
-.font-i:first-child
+.font-i
 {
   color: #badac9;
-  transform: scaleX(-1); 
-  -webkit-transform: scaleX(-1); 
-  -moz-transform: scaleX(-1); 
-  -ms-transform: scaleX(-1); 
-  -o-transform: scaleX(-1); 
 }
 
-.font-i:nth-child(2)
-{
-  color: #f8d12d;
-}
 
-.font-i:nth-child(3)
-{
-  color: #80465f;
-}
-
-.font-i:last-child
-{
-  color: #eb6950;
-}
 </style>

@@ -15,7 +15,6 @@
             <nav class="d-flex">
                 <ul class="d-flex text-uppercase fw-bold">
                     <li v-for="(element, i) in menu" :key="i" class="m-3"><a href="#">{{element}}</a>
-                
                     </li>
                 </ul>
                 <div class="mx-2 p-1 mt-2">

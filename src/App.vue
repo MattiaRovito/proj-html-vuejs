@@ -8,10 +8,7 @@
           
             <span class="text-uppercase related fw-bold ms-2">Related</span>
 
-            <div class="box-related">
-                CIAO
-            </div>
-            
+                    
           
       </div>
     
@@ -30,7 +27,7 @@
         <a href="#top"><img src="@/assets/svg/svg-2.svg" alt="svg" class="w-100"></a>
     </div>
     
-
+ 
     <Header/>
 
     <Main/>
@@ -109,22 +106,22 @@ export default {
 }
 
 
-.box-related
-{
-  display: none;
-  width: 20%;
-  height: 400px;
-  background-color: red;
-}
+// .box-related
+// {
+//   display: none;
+//   width: 20%;
+//   height: 400px;
+//   background-color: red;
+// }
 
 .related
 {
   color: white;
 
-  &:active + .box-related
-  {
-    display: block;
-  }
+  // &:active + .box-related
+  // {
+  //   display: block;
+  // }
 }
 
 

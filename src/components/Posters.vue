@@ -78,15 +78,18 @@ img
     {
     content: "";
     width: 0;
-    height: 3px;
-    background-color: rgb(34, 156, 34);
+    height: 6px;
+    background-color: rgba(34, 156, 34, 0.3);
     display: block;
-    transition: width 0.5s;
+    transition: width 1.5s;
+    position:absolute;
+    bottom: 65px;
+    left: 10px;
     }
 
     a:hover::after 
     {
-    width: 100%;
+    width: 90%;
     }
 }
 

@@ -133,6 +133,12 @@ img
     top: 400px;
 }
 
+
+.prev:hover, .next:hover
+{
+    transform: scale(1.2);
+}
+
 .jumbo
 {
     padding: 20px;

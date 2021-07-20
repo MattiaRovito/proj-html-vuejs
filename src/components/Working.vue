@@ -30,8 +30,15 @@ export default {
   padding:55px 60px;
   border-radius: 50%;
   background-color: #faf7f1;
-
+  // opacity: 0;
+  // transition: opacity 0.5s;
 }
+
+// .font-i:hover
+// {
+//   opacity: 1
+// }
+
 
 .h5
 {

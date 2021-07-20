@@ -24,13 +24,14 @@ import Social from '@/components/Social.vue'
 export default {
 name: 'Footer',
 components:{
-  Social
+  Social,
 },
 data(){
   return {
-    socials: ['fab fa-twitter','fab fa-pinterest-p','fab fa-facebook-f','fab fa-linkedin-in']
+    socials: ['fab fa-twitter','fab fa-pinterest-p','fab fa-facebook-f','fab fa-linkedin-in'],
   }
-}
+},
+ 
 }
 </script>
 

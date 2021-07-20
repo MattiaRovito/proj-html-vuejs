@@ -1,22 +1,22 @@
 <template>
   <div id="app">
     
-      <div class="qode position-fixed p-3">
+      <div class="qode position-fixed p-2 shadow">
         
          
-            <img src="@/assets/svg/svg-4.svg" alt="svg" class="w-img me-2">
+            <img src="@/assets/svg/svg-4.svg" alt="svg" class="w-img">
           
-            <span class="text-uppercase related">Related</span>
+            <span class="text-uppercase related fw-bold ms-2">Related</span>
             
           
       </div>
     
 
-    <div class="shop d-flex position-fixed">
+    <div class="shop position-fixed p-2 shadow">
 
-          <img src="@/assets/svg/svg-6.svg" alt="svg">
+          <img src="@/assets/svg/svg-6.svg" alt="svg" class="w-shop">
       
-          <span class="text-uppercase buy">Buy Now</span>
+          <span class="text-uppercase buy fw-bold ms-2">Buy Now</span>
 
       
     </div>
@@ -67,9 +67,8 @@ export default {
 
 .shop
 {
-  top: 250px;
+  top: 220px;
   background-color: white;
-  padding: 15px 13px;
   margin-left: 5px;
 }
 
@@ -79,7 +78,7 @@ export default {
   right: -80px;
   z-index: 1000;
   width: 10%;
-  height: 10%;
+  height: 4%;
   cursor: pointer;
 }
 
@@ -89,18 +88,23 @@ export default {
   width: 13%;
 }
 
+.w-shop
+{
+  width: 9%;
+}
+
+
+.related, .buy
+{
+  font-size: 10px;
+}
 
 .related
 {
-  font-size: 12px;
   color: white;
 }
 
-.buy
-{
-  font-size: 12px;
-  padding: 5px;
-}
+
 
 
 

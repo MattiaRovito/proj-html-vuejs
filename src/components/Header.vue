@@ -13,12 +13,12 @@
 
             <!-- utilizzato un v-for per ciclare un array all'interno di una nav -->
             <nav class="d-flex">
-                <ul class="d-flex text-uppercase fw-bold dropdown">
-                    <li v-for="(element, i) in menu" :key="i" class="m-3"><a href="#">{{element}}</a>
-                        <ul class="dropdown-content">
-                            <li v-for="(drop, i) in drops" :key='i'>{{drop}}</li>
-                        </ul>
+                <ul class="d-flex dropdown">
+                    <li v-for="(element, i) in menu" :key="i" class="fw-bold text-uppercase  m-3"><a href="#">{{element}}</a>
                     </li>
+                    <ul class="dropdown-content">
+                        <li v-for="(drop, i) in drops" :key='i' class="p-2">{{drop}}</li>
+                    </ul>
                     
                     
                 </ul>
@@ -124,22 +124,20 @@ li
 .dropdown-content {
   display: none;
   position: fixed;
-  right: 470px;
+  top: 100px;
+  right: 400px;
   background-color: #faf7f2;
   min-width: 250px;
   padding: 20px 18px;
   z-index: 1;
-  font-size: 16px;
+  font-size: 12px;
+  color: #898988;
 
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
-
-
 
 
 

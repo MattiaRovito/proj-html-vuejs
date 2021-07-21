@@ -13,9 +13,14 @@
 
             <!-- utilizzato un v-for per ciclare un array all'interno di una nav -->
             <nav class="d-flex">
-                <ul class="d-flex text-uppercase fw-bold">
+                <ul class="d-flex text-uppercase fw-bold dropdown">
                     <li v-for="(element, i) in menu" :key="i" class="m-3"><a href="#">{{element}}</a>
+                        <ul class="dropdown-content">
+                            <li v-for="(drop, i) in drops" :key='i'>{{drop}}</li>
+                        </ul>
                     </li>
+                    
+                    
                 </ul>
                 <div class="mx-2 p-1 mt-2">
                     <a href="#"><img src="@/assets/svg/svg-1.svg" alt="menu"></a>
@@ -71,7 +76,8 @@ export default {
                     leafFour: 'short-slider-rev-1-img-2'
                 },
                
-            ]
+            ],
+            drops : ['Main Home', 'Floating Portfolio', 'Portfolio Pinterest', 'Animated Slider', 'Portfolio Metro', ' Portfolio Gallery', ' Interactive Links', 'Split Slider Showcase', 'Portfolio Carousel', 'Landing']
         }
        
     }
@@ -108,6 +114,30 @@ li
     }
 
 }
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  right: 470px;
+  background-color: #faf7f2;
+  min-width: 250px;
+  padding: 20px 18px;
+  z-index: 1;
+  font-size: 16px;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 
 
 
